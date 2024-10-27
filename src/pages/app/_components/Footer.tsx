@@ -18,7 +18,7 @@ const navLinks = [
 const Footer = () => {
   const location = useLocation();
   return (
-    <footer className="flex items-center justify-center gap-7 p-4 border-t border-t-gray-200">
+    <footer className="flex items-center justify-center gap-10 p-4 border-t border-t-gray-200">
       {navLinks.map(({ to, Icon, name }) => (
         <Link
           className={`flex flex-col items-center ${location.pathname === to ? "text-purple-900" : ""}`}
