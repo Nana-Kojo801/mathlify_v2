@@ -7,7 +7,7 @@ import { useMutation } from "convex/react";
 import { useCallback, useEffect, useState } from "react";
 import {
   FaForward,
-  FaLayerGroup,
+  FaPersonRunning,
   FaPowerOff,
   FaRotateRight,
 } from "react-icons/fa6";
@@ -57,7 +57,7 @@ const WrongButtons = ({ startAgain }: { startAgain: () => void }) => {
 const RoundDisplay = ({ currentRound }: { currentRound: number }) => {
   return (
     <div className="absolute left-3 top-8 flex gap-2 items-center justify-center text-white text-xl bg-purple-900 py-1 px-3 rounded-md">
-      <FaLayerGroup />
+      <FaPersonRunning />
       <p>{currentRound}</p>
     </div>
   );

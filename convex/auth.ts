@@ -10,7 +10,7 @@ export const { auth, signIn, signOut, store } = convexAuth({
           username: params.username as string,
           chips: 10,
           elo: 100,
-          avatar: `https://ui-avatars.com/api/?name=${params.username}`,
+          avatar: `https://ui-avatars.com/api/?name=${params.username}background=random`,
           marathonData: {
             highestRound: 0,
             playCount: 0,

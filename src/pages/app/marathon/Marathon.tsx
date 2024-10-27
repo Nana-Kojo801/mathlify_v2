@@ -6,16 +6,16 @@ import { Outlet, useNavigate } from "react-router-dom";
 
 const Marathon = () => {
   const { user } = useAuth();
-  const initGame = useGame(state => state.init)
-  const navigate = useNavigate()
+  const initGame = useGame((state) => state.init);
+  const navigate = useNavigate();
 
   const startGame = () => {
-    initGame(getDifficultyByRound(1))
-    navigate("play")
+    initGame(getDifficultyByRound(1));
+    navigate("play");
   };
 
   return (
-    <div className="w-full h-full overflow-y-auto p-3 py-2 flex flex-col relative">
+    <div className="w-full h-full overflow-y-auto p-3 py-2 flex flex-col gap-5 relative">
       <div className="mt-2 flex flex-col gap-1">
         <h2 className="font-bold text-2xl text-purple-900">Stats</h2>
         <div className="grid grid-cols-2 gap-2">
@@ -38,6 +38,10 @@ const Marathon = () => {
             Play marathon
           </button>
         </div>
+      </div>
+      <div className="mt-2 flex flex-col">
+        <h2 className="font-bold text-2xl text-purple-900">Online events</h2>
+        <p>No events yet</p>
       </div>
       <Outlet />
     </div>
