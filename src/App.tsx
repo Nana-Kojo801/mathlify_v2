@@ -17,6 +17,7 @@ import Abilities from "@/pages/app/abilities/Abilities";
 import AddFriend from "@/pages/app/add-friend/AddFriend";
 import FriendRequest from "@/pages/app/friend-requests/FriendRequest";
 import Chat from "@/pages/app/chat/Chat";
+import Online from "@/pages/app/online/Online";
 
 const App = () => {
   const { userLoading } = useAuth();
@@ -35,6 +36,7 @@ const App = () => {
           <Route path="add-friend" element={<AddFriend />}/>
           <Route path="friend-requests" element={<FriendRequest />}/>
           <Route path="chat/:friendId" element={<Chat />} />
+          <Route path="online" element={<Online />} />
           <Route path="practice" element={<Practice />}>
             <Route path="play" element={<PlayPractice />} />
           </Route>
