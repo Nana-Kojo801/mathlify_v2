@@ -325,9 +325,9 @@ const Review = () => {
   const [selectedIndex, setSelectedIndex] = useState(numbers.length - 1);
 
   return (
-    <div className="fixed z-20 left-0 top-0 p-3 w-full h-full flex flex-col bg-white">
+    <div className="fixed z-20 left-0 top-0 w-full h-full flex flex-col bg-white">
       <HeaderCallback title="Review" callback={() => setShowReview(false)} />
-      <div className="flex-grow grid grid-rows-2 mt-2">
+      <div className="flex-grow grid grid-rows-2 mt-2 p-3">
         <div className="flex flex-col border-b border-b-gray-400 gap-1">
           <h2 className="text-lg font-bold">Numbers</h2>
           <div className="grid grid-cols-[repeat(auto-fill,_minmax(40px,_1fr))] gap-2">
